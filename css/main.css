@@ -29,6 +29,20 @@
 
 /* 1.1 Page Rendering Defaults */
 
+/* Golbal */
+
+:root {
+    /* Color */
+    --color-white: #FFFFFF;
+    --color-accent: #FFB901;
+    --color-success: #25C389;
+    --color-error: #DE6262;
+    --color-primary: #19B2DE;
+    --color-thrinary: #265787;
+    --color-text: #4D4D4D;
+}
+
+
 html {
     color: #222;
     font-size: 1em;
