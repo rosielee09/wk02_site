@@ -150,6 +150,14 @@ header {
 .col {
     position: relative;
     background-color: rgb(242, 230, 177);
+    padding: 1rem;
+}
+
+
+/* footer */
+
+.footer__content {
+    grid-template-rows: auto;
 }
 
 
