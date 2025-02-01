@@ -93,6 +93,13 @@ li {
     list-style-type: none;
 }
 
+em {
+    font-style: normal;    
+}
+
+.highlight {
+    color: var(--color-primary);
+}
 
 /* 1.2 Core Styling */
 
