@@ -181,17 +181,12 @@ p {
 .page__section--service {
     display: grid;
     margin: auto;
-    box-sizing: border-box;
 }
 
 .section__header__subtitle {
     color: var(--color-text);
-    font-style: normal;
 }
 
-.service__title {
-    font-weight: normal;
-}
 
 .service__description {
     color: var(--color-text);
