@@ -122,6 +122,54 @@ p {
 }
 
 
+/* Blog */
+.blog__card,{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+.blog__img{
+    width: auto;
+    height: auto;
+}
+
+.blog__header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+.blog__date{
+    position: absolute;
+    height: 18%;
+    width: 20%;
+    top:0;
+    left:0;
+    background-color: var(--color-error);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: var(--color-white);
+}
+.blog__header__title,
+.blog__date--date {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.blog__header__subTitle,
+.blog__date--monthyear{
+    font-size: 0.9rem;
+}
+
 /* ==========================================================================
    2. LAYOUT
    ========================================================================== */
