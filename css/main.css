@@ -36,6 +36,8 @@
     --color-white: #FFFFFF;
     --color-accent: #FFB901;
     --color-success: #25C389;
+    --color-success-hover: #F0F08C;
+    --color-success-hover-text:#0057C2;
     --color-error: #DE6262;
     --color-primary: #19B2DE;
     --color-thrinary: #265787;
@@ -121,6 +123,22 @@ p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+.menu__text {
+    /* Main_Menu_Link */
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu__icon {
+    font-family: "Myriad Pro";
+    font-size: 0.938rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 91%; /* 16.38px */
+}
+
 
 /* ==========================================================================
    2. LAYOUT
@@ -153,12 +171,6 @@ header {
     padding: 1rem;
 }
 
-
-/* footer */
-
-.footer__content {
-    grid-template-rows: auto;
-}
 
 
 /* 2.2 Small only */
@@ -246,6 +258,84 @@ header {
 /* ==========================================================================
    2. MODULES
    ========================================================================== */
+/* navbar */
+
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    font-size: 2rem;
+    
+}
+.logo__icon {
+    width: 16px;
+    height: auto;
+    margin-left: 0.625rem;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+   
+}
+.menu__item {
+    display: flex;
+    width: 8.375rem;
+    height: 6rem;
+    align-items: flex-end;
+    padding: 0.813rem 0.938rem;  
+}
+
+.menu__link {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--color-white);
+    gap:0.5rem;  
+}
+
+.menu__item--home {
+    background-color: var(--color-success);
+}
+
+.menu__item--home:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__link:hover{
+    color: var(--color-success-hover-text);
+}
+
+.menu__item--portfolio {
+    background-color: var(--color-accent);
+}
+.menu__item--blog {
+    background-color: var(--color-error);
+}
+
+.menu__item--quo {
+    background-color: var(--color-primary);
+}
+
+.menu__item--chat {
+    background-color: var(--color-thrinary);
+}
+
+/* footer */
+
+.footer__content {
+    grid-template-rows: auto;
+}
 
 
 /* ==========================================================================
