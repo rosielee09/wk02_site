@@ -119,6 +119,11 @@ h6 {
     text-align: center;
 }
 
+div {
+    font-family: 'Ubuntu';
+}
+
+
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
@@ -139,6 +144,40 @@ p {
     line-height: 91%; /* 16.38px */
 }
 
+/* Hero Banner */
+.page__section--hero {
+    background-color: #EBEBEB;
+}
+
+.hero__title {
+    display: grid;
+    row-gap: 5px;
+    position: absolute;
+    top: 60%;
+    font-family: 'Ubuntu';
+    padding-left: 50px;
+}
+
+.hero__title--metro,
+.hero__title--quick,
+.hero__title--reinvented {
+    background: rgba(255,255,255, 0.5);
+    border-left: 5px solid;
+    padding: 12px;
+    
+}
+
+.hero__title--metro {
+    border-color: var(--color-thrinary);
+}
+
+.hero__title--quick {
+    border-color: var(--color-error);
+}
+
+.hero__title--reinvented {
+    border-color: var(--color-accent);
+}
 
 /* Blog */
 .blog__card,{
