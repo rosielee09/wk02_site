@@ -89,10 +89,12 @@ textarea {
     resize: vertical;
 }
 
+em {
+    font-style: normal;
+    color: var(--color-primary);
+}
 
 /* 1.2 Core Styling */
-
-
 /* refer to https://css-tricks.com/box-sizing/ */
 
 *,
@@ -179,12 +181,12 @@ p {
 }
 
 /* Blog */
-.blog__card,{
+.blog__card {
     position: relative;
     width: 100%;
     height: 20vh;
 }
-.blog__img{
+.blog__img {
     width: auto;
     height: auto;
 }
