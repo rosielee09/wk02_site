@@ -301,6 +301,7 @@ header {
     .page__header {
         display: grid;
         grid-template-columns: 1fr;
+        row-gap: 0;
        
     }
     .logo {
@@ -347,6 +348,8 @@ header {
     .l-hide {
         display: none;
     }
+
+  
 }
 
 
@@ -354,8 +357,9 @@ header {
    2. MODULES
    ========================================================================== */
 /* navbar */
-
-
+.logo {
+    padding-left: 0;
+}
 
 .logo__text {
     font-size: 2rem;
@@ -369,7 +373,9 @@ header {
 
 .menu {
     display: flex;
+    margin: 0;
 }
+
 .menu__item {
     display: flex;
     width: 8.375rem;
@@ -413,10 +419,6 @@ header {
 .menu__item--chat {
     background-color: var(--color-thrinary);
 }
-
-
-
-
 
 
 
