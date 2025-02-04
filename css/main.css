@@ -235,8 +235,8 @@ header {
     }
 
     .s-row-span {
-        grid-column-start: 1;
-        grid-column-end: -1;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
     }
 }
 
