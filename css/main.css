@@ -89,10 +89,12 @@ textarea {
     resize: vertical;
 }
 
+em {
+    font-style: normal;
+    color: var(--color-primary);
+}
 
 /* 1.2 Core Styling */
-
-
 /* refer to https://css-tricks.com/box-sizing/ */
 
 *,
@@ -119,6 +121,11 @@ h6 {
     text-align: center;
 }
 
+div {
+    font-family: 'Ubuntu';
+}
+
+
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
@@ -139,6 +146,104 @@ p {
     line-height: 91%; /* 16.38px */
 }
 
+/* Hero Banner */
+.page__section--hero {
+    background-color: #EBEBEB;
+}
+
+.hero__title {
+    display: grid;
+    row-gap: 5px;
+    position: absolute;
+    top: 60%;
+    padding-left: 50px;
+}
+
+.hero__title--metro,
+.hero__title--quick,
+.hero__title--reinvented {
+    background: rgba(255,255,255, 0.5);
+    border-left: 5px solid;
+    padding: 12px;
+    
+}
+
+.hero__title--metro {
+    border-color: var(--color-thrinary);
+}
+
+.hero__title--quick {
+    border-color: var(--color-error);
+}
+
+.hero__title--reinvented {
+    border-color: var(--color-accent);
+}
+
+/* Service */
+.section__header__subtitle {
+    color: var(--color-text);
+}
+
+.service__title {
+    font-weight: bold;
+}
+
+.service__description {
+    font-weight: 200;
+    font-size: small;
+    color: var(--color-text);
+    text-align: justify;
+}
+
+
+/* Blog */
+.blog__card {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+.blog__img {
+    width: auto;
+    height: auto;
+}
+
+.blog__header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+}
+.blog__date{
+    position: absolute;
+    height: 18%;
+    width: 20%;
+    top:0;
+    left:0;
+    background-color: var(--color-error);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: var(--color-white);
+}
+.blog__header__title,
+.blog__date--date {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.blog__header__subTitle,
+.blog__date--monthyear{
+    font-size: 0.9rem;
+}
 
 /* ==========================================================================
    2. LAYOUT
@@ -179,6 +284,12 @@ header {
     .s-hide {
         display: none;
     }
+
+    .s-row-4 {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr max-content;
+    }
 }
 
 
@@ -211,8 +322,14 @@ header {
     .m-1-2 {
         grid-template-columns: 1fr 2fr;
     }
-
-
+    .page__header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 16px 0px 0px 2px;
+        width: 100%;
+    }
+ 
 }
 
 
@@ -225,6 +342,28 @@ header {
     }
     .m-hide {
         display: none;
+    }
+   /* navbar */
+    .page__header {
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+    .logo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding:0; 
+        margin: 0; 
+    }
+    .menu__item {
+        align-items: stretch;
+        flex-grow: 1;
     }
 }
 
@@ -262,16 +401,6 @@ header {
    ========================================================================== */
 /* navbar */
 
-.page__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
 
 .logo__text {
     font-size: 2rem;
@@ -283,14 +412,11 @@ header {
     margin-left: 0.625rem;
 }
 
-
 .menu {
     display: flex;
-   
 }
 .menu__item {
     display: flex;
-    flex-direction: column;
     width: 8.375rem;
     height: 6rem;
     align-items: flex-end;
@@ -332,6 +458,9 @@ header {
 .menu__item--chat {
     background-color: var(--color-thrinary);
 }
+
+
+
 
 /* footer */
 
