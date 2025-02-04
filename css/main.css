@@ -284,13 +284,14 @@ header {
     .s-hide {
         display: none;
     }
+}    
 
     .s-row-4 {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr max-content;
     }
-}
+
 
 
 /* 2.3 medium and up */
