@@ -211,6 +211,8 @@ header {
     .m-1-2 {
         grid-template-columns: 1fr 2fr;
     }
+
+
 }
 
 
@@ -284,11 +286,11 @@ header {
 
 .menu {
     display: flex;
-    list-style: none;
    
 }
 .menu__item {
     display: flex;
+    flex-direction: column;
     width: 8.375rem;
     height: 6rem;
     align-items: flex-end;
