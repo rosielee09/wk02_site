@@ -180,6 +180,23 @@ p {
     border-color: var(--color-accent);
 }
 
+/* Service */
+.section__header__subtitle {
+    color: var(--color-text);
+}
+
+.service__title {
+    font-weight: bold;
+}
+
+.service__description {
+    font-weight: 200;
+    font-size: small;
+    color: var(--color-text);
+    text-align: justify;
+}
+
+
 /* Blog */
 .blog__card {
     position: relative;
@@ -266,6 +283,12 @@ header {
 @media screen and (max-width: 39.9375em) {
     .s-hide {
         display: none;
+    }
+
+    .s-row-4 {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr max-content;
     }
 }
 
