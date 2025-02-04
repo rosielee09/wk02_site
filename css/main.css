@@ -421,10 +421,11 @@ header {
 
 
 /* Blog */
+
+
 .blog__card{
     position: relative;
     width: 100%;
-    height: 20vh;
 }
 .blog__img{
     width: auto;
@@ -434,15 +435,19 @@ header {
 .blog__header{
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 18%;
     bottom: 0;
     left: 0;
     background-color: var(--color-primary);
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
     overflow: hidden;
+    margin: 0;
+    line-height: 0;
+    padding: 1%;
 }
 .blog__date{
     position: absolute;
@@ -455,7 +460,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 0.5em;
     color: var(--color-white);
 }
 .blog__header__title,
