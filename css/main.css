@@ -423,7 +423,7 @@ header {
 
 
 /* Blog */
-.blog__card,{
+.blog__card {
     position: relative;
     width: 100%;
     height: 20vh;
