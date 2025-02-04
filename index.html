@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rosie's Metrolics MockUp Website</title>
+  <title>Project1 - Metrolics MockUp Website by Rachel, Rosie, Pat</title>
 
   <link rel="stylesheet" href="css/main.css">
   <meta name="description" content="Welcome to Rosie's Website, where you can find the greatest content on our services. Explore our features and join our community!">
@@ -21,16 +21,22 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
+   <!-- Google Fonts used -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="page page--home">
-  <header class="page__header">
+  <header class="page__header row m-col-1 m-row-span">
     <div class="logo">
       <span class="logo__text">Metrolics</span>
-      <img src="/" alt="Header logo icon" class="logo__icon">
+      <img src="img/Metrolics_logo.svg" alt="Header logo icon" class="logo__icon">
     </div>
 <!-- navigation bar -->
-    <nav class="navbar">
+    <nav class="navbar s-hide">
       <ul class="menu">
         <li class="menu__item menu__item--home">
           <a href="#" class="menu__link">
@@ -71,11 +77,11 @@
     <div class="page__section page__section--hero">
       <div class="hero__content">
         <div class="hero__title">           
-          <li class="hero__title--metro">Metro Style</li>    
-          <li class="hero__title--quick">Quick on the feet</li>
-          <li class="hero__title--reinvented">Metro Styling Reinvented</li>
+          <div class="hero__title--metro">Metro Style</div>    
+          <div class="hero__title--quick">Quick on the feet</div>
+          <div class="hero__title--reinvented">Metro Styling Reinvented</div>
         </div>
-        <img src="/" alt="Hero background image" class="hero__background">
+        <img src="img/placeholder.svg" alt="Hero background image" class="hero__background">
       </div>
     </div>
 
@@ -89,33 +95,33 @@
     <!-- service section -->
     <section class="page__section page__section--service">
       <header class="section__header section__header--service">
-        <h2 class="section__header__title">Thins That We Do</h2>
+        <h2 class="section__header__title">Things That We Do</h2>
         <h5 class="section__header__subtitle">Ask us what we can do for you</h5>
       </header> 
       
-      <div class="service__grid">
+      <div class="service__grid row m-col-2 l-col-4">
         <div class="service__card">
-          <img src="/" alt="Service icon image 1" class="service__icon service__icon--lightbulb">
+          <img src="img/placeholder.svg" alt="Lightbulb icon" class="service__icon service__icon--lightbulb">
           <h3 class="service__title">Web Solutions</h3>
-          <p class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+          <article class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</article>
         </div>
 
         <div class="service__card">
-          <img src="/" alt="Service icon image 1" class="service__icon service__icon--camera">
+          <img src="img/placeholder.svg" alt="Camera icon" class="service__icon service__icon--camera">
           <h3 class="service__title">Photography</h3>
-          <p class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+          <article class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </div>
 
         <div class="service__card">
-          <img src="/" alt="Service icon image 3" class="service__icon service__icon--click">
+          <img src="img/placeholder.svg" alt="Click icon" class="service__icon service__icon--click">
           <h3 class="service__title">App Development</h3>
-          <p class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+          <article class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </div>
 
         <div class="service__card">
-          <img src="/" alt="Service icon image 3" class="service__icon service__icon--pen">
+          <img src="img/placeholder.svg" alt="Pen icon" class="service__icon service__icon--pen">
           <h3 class="service__title">UX Design</h3>
-          <p class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+          <article class="service__description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</article>
         </div>
       </div>
     </section>
@@ -190,50 +196,53 @@
         <h2 class="section__header__title">Our Best Work. Period.</h2>
         <h5 class="section__header__subtitle">Client happy? We are happy.</h5>
       </header>
-      <div class="portfolio__grid ">
+
+      
+      <div class="portfolio__grid row l-col-3 m-row-span m-col-2">
+
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
         <div class="portfolio__item">
-          <img src="/" alt="portfolio image" class="portfolio__img">
+          <img src="./img/placeholder.svg" alt="portfolio image" class="portfolio__img col">
         </div>
       </div>
     </section>
 
     <!-- clients -->
-    <section class="page__section page__section--clients">
+    <section class="page__section page__section--clients s-hide">
       <header class="section__header section__header--clients">
         <h2 class="section__header__title">Satisfaction Guaranteed</h2>
         <h5 class="section__header__subtitle">Past clients stoked with our work. We are happy until YOU are happy.</h5>
       </header>
 
-      <div class="clients__grid">
-        <div class="client__logo">
-          <img src="/" alt="Krita logo image" class="client__logo--krita">
+      <div class="clients__grid l-col-5 m-col-3 row ">
+        <div class="client__logo col">
+          <img src="/img/placeholder.svg" alt="Krita logo image" class="client__logo--krita">
         </div>
-        <div class="client__logo">
-          <img src="/" alt="Inkscape logo image" class="client__logo--inkscape">
+        <div class="client__logo col">
+          <img src="/img/placeholder.svg" alt="Inkscape logo image" class="client__logo--inkscape">
         </div>
-        <div class="client__logo">
-          <img src="/" alt="godot logo image" class="client__logo--godot">
+        <div class="client__logo col">
+          <img src="/img/placeholder.svg" alt="godot logo image" class="client__logo--godot">
         </div>
-        <div class="client__logo">
-          <img src="/" alt="blender logo image" class="client__logo--blender">
+        <div class="client__logo col">
+          <img src="/img/placeholder.svg" alt="blender logo image" class="client__logo--blender">
         </div>
-        <div class="client__logo">
-          <img src="/" alt="penpot logo image" class="client__logo--penpot">
+        <div class="client__logo col">
+          <img src="/img/placeholder.svg" alt="penpot logo image" class="client__logo--penpot">
         </div>
       </div>
     </section>
