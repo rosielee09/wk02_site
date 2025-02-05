@@ -147,6 +147,56 @@ p {
     line-height: 91%; /* 16.38px */
 }
 
+/*  footer */
+
+.footer__heading{
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer__heading--about {
+    color: var(--color-accent);
+}
+.footer__heading--instagram {
+    color: var(--color-error);
+}
+.footer__heading--mastodon {
+    color: var(--color-primary);
+}
+
+.footer__ceo--text,
+.footer__about{
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+.mastodon__post{
+    font-family: Open Sans;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; 
+}
+.mastodon__highlight{
+    text-align: justify;
+    font-family: "Open Sans";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; 
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+
 /* Hero Banner */
 .page__section--hero {
     background-color: #EBEBEB;
@@ -244,6 +294,20 @@ header {
         grid-template-rows: auto;
         grid-template-columns: 1fr max-content;
     }
+    .footer__ceo,
+    .footer__columns {
+        display: grid; /* Ensure the footer columns are displayed as a grid */
+        grid-template-columns: repeat(1, 1fr); /* Stack all columns in a single column */
+        
+    }
+    .footer__ceo,
+    .footer__mastodon,
+    .footer__trackus {
+        grid-column: span 1; 
+        width: 100%; 
+        padding: 0;
+    }
+
 }
 
 
@@ -273,6 +337,9 @@ header {
     .m-col-5 {
         grid-template-columns: repeat(5, 1fr);
     }
+    .m-col-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
     .m-1-2 {
         grid-template-columns: 1fr 2fr;
     }
@@ -280,8 +347,21 @@ header {
         display: flex; 
         justify-content: space-between; 
         align-items: center; 
-        padding: 16px 0px 0px 2px;
+        padding: 0;
         width: 100%;
+    }
+    
+    .footer__about{
+        grid-column: span 3;
+    }
+    .footer__instagram{
+        grid-column: span 3;
+    }
+    .footer__mastodon {
+        grid-column: span 4;
+    }
+    .footer__trackus {
+        grid-column: span 2;
     }
  
 }
@@ -297,6 +377,7 @@ header {
     .m-hide {
         display: none;
     }
+
    /* navbar */
     .page__header {
         display: grid;
@@ -320,6 +401,19 @@ header {
         align-items: stretch;
         flex-grow: 1;
     }
+    /* footer */
+    .footer__about{
+        grid-column: span 3;
+    }
+    .footer__instagram{
+         grid-column: span 3;
+    }
+    .footer__mastodon {
+        grid-column: span 4;
+    }
+    .footer__trackus {
+        grid-column: span 2;
+    }
 }
 
 
@@ -341,10 +435,27 @@ header {
     .l-col-6 {
         grid-template-columns: repeat(6, 1fr);
     }
+    .l-col-12 {
+        grid-template-columns: repeat(12, 1fr);
+    }
     .l-row-span {
         grid-column-start: 1;
         grid-column-end: -1;
     }
+
+    .footer__about {
+        grid-column: span 3; /* 3 columns */
+    }
+    .footer__instagram {
+        grid-column: span 3; /* 3 columns */
+    }
+    .footer__mastodon {
+        grid-column: span 4; /* 4 columns */
+    }
+    .footer__trackus {
+        grid-column: span 2; /* 2 columns */
+    }
+
     .l-hide {
         display: none;
     }
@@ -480,8 +591,13 @@ header {
 
 .page__footer {
     width: 100%;
-    height: 37.375rem;
+    min-height: 37.375rem;
+    padding: 2rem; 
     
+}
+.footer__heading{
+    text-align: left;
+    margin:0;
 }
 
 .footer__content {
@@ -493,25 +609,65 @@ header {
 .footer__ceo {
     display: flex;
     align-items: center;
-    width: 47.5rem;
+    width: 100%; /* Allow it to take full width */
+    max-width: 47.5rem;
     padding: 2rem;  
     gap: 2rem;
 }
 .footer__ceo--img {
     width: 10.648rem;
-    height: 9.208rem;
+    height: 9.208rem;    
+}
+.footer__ceo--img,
+.instagram__img {
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Maintain aspect ratio */
+}
+.footer__ceo--text-container {
+    display: flex; 
+    flex-direction: column; 
+    padding:0;
+}
+
+.footer__ceo--divider{
+    width: 7.375rem;
+    height: 0.188rem;
+    background-color:var(--color-accent);
+    margin: 0;
     
 }
 
-.footer__heading--about {
-    color: var(--color-accent);
+.footer_columns,
+.footer__about,
+.footer__instagram,
+.footer__mastodon,
+.footer__trackus{
+    padding: 0;
 }
-.footer__heading--instagram {
-    color: var(--color-error);
+
+.mastodon__post{
+    padding: 0;
 }
-.footer__heading--mastodon {
-    color: var(--color-primary);
+
+.instagram__img--grid{
+    padding: 0;
 }
+
+.instagram__img{
+    border-radius: 2px;
+    border: 1px solid #E1E1E1;
+}
+
+.socialmedia__links{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.313rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
 
 /* ==========================================================================
    2. STATES

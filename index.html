@@ -255,18 +255,21 @@
 
   <footer class="page__footer">
     <div class="footer__content row">
-
       <div class="footer__ceo col l-row-span">
           <img src="img/Alf CEO.svg" alt="CEO portrait" class="footer__ceo--img">
-          <p class="footer__ceo--text">Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
-          <hr class="footer__ceo--divider">
+          <div class="footer__ceo--text-container">
+            <p class="footer__ceo--text">Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients. </p>
+            <hr class="footer__ceo--divider">
+          </div>
       </div>
-
-
-    
-        <div class="footer_columns row l-col-4 m-col-2">
-          <section class="footer__about col">
+           
+        <div class="footer__columns row l-col-12 m-col-6">
+          <section class="footer__about col l-col-3 m-col-3 s-hide">
             <h3 class="footer__heading footer__heading--about">About Us</h3>
+            <svg xmlns="http://www.w3.org/2000/svg"  width="232" height="6" viewBox="0 0 232 6" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7086 5.03675L15.1107 0.719482Z" fill="#21C183"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#21C183"/>
+            </svg>
             <p class="footer__description footer__description--first">
               Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. 
             </p>
@@ -275,8 +278,12 @@
             </p>
           </section>
 
-          <section class="footer__instagram col s-hide">
+          <section class="footer__instagram col l-col-3 m-col-3 s-hide">
             <h3 class="footer__heading footer__heading--instagram">Instagram</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="232" height="6" viewBox="0 0 232 6" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7086 5.03675L15.1107 0.719482Z" fill="#19B2DE"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#19B2DE"/>
+            </svg>
             <div class="instagram__img--grid row l-col-3 m-col-4">
               <img src="img/instagramphoto.svg" alt="Instagram post image" class="instagram__img">
               <img src="img/instagramphoto.svg" alt="Instagram post image" class="instagram__img">
@@ -289,38 +296,58 @@
             </div>
           </section>
 
-          <section class="footer__mastodon col">
+          <section class="footer__mastodon col l-col-4 m-col-4">
             <h3 class="footer__heading footer__heading--mastodon">What's New on Mastodon</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="232" height="6" viewBox="0 0 232 6" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7085 5.03675L15.1107 0.719482Z" fill="#FFB901"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#FFB901"/>
+            </svg>
             <div class="mastodon__post">
-              <div class="mastodon__post--item">@Minions - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </div>
-              <div class="mastodon__post--item">@Minions - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </div>
-              <div class="mastodon__post--item">@Minions - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </div>
+              <p class="mastodon__post--item"><span class="mastodon__highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </p>
+              <p class="mastodon__post--item"><span class="mastodon__highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </p>
+              <p class="mastodon__post--item"><span class="mastodon__highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </p>
             </div>
           </section>
 
-          <section class="footer__trackus col">
+          <section class="footer__trackus col l-col-2 m-col-2">
             <h3 class="footer__heading footer__heading--trackus">Track us!</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="146" height="8" viewBox="0 0 146 8" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7513 0.608887H22.4009L18.2284 7.15923L14.7513 0.608887Z" fill="#19B2DE"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H146V1H0Z" fill="#19B2DE"/>
+            </svg>
             <div class="socialmedia__links">
-              <a href="#" class="socialmedia__icon">
-                <img src="/" alt="Facebook icon" class="socialmedia__icon--facebook">
+              <a href="#" class="socialmedia__icon socialmedia__icon--facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H30C31.1046 0 32 0.895431 32 2V30C32 31.1046 31.1046 32 30 32H2C0.895431 32 0 31.1046 0 30V2Z" fill="#527CC4"/>
+                </svg>
               </a>
-              <a href="#" class="socialmedia__icon">
-                <img src="/" alt="Google icon" class="socialmedia__icon--google">
+              <a href="#" class="socialmedia__icon socialmedia__icon--google">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H30C31.1046 0 32 0.895431 32 2V30C32 31.1046 31.1046 32 30 32H2C0.895431 32 0 31.1046 0 30V2Z" fill="#E46145"/>
+                </svg>
               </a>
-              <a href="#" class="socialmedia__icon">
-                <img src="/" alt="Twitter icon" class="socialmedia__icon--twitter">
+              <a href="#" class="socialmedia__icon socialmedia__icon--twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H30C31.1046 0 32 0.895431 32 2V30C32 31.1046 31.1046 32 30 32H2C0.895431 32 0 31.1046 0 30V2Z" fill="#00B0E2"/>
+                </svg>
               </a>
-              <a href="#" class="socialmedia__icon">
-                <img src="/" alt="Dribble icon" class="socialmedia__icon--dribble">
+              <a href="#" class="socialmedia__icon socialmedia__icon--dribble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H30C31.1046 0 32 0.895431 32 2V30C32 31.1046 31.1046 32 30 32H2C0.895431 32 0 31.1046 0 30V2Z" fill="#F6679C"/>
+                </svg>
               </a>
-              <a href="#" class="socialmedia__icon">
-                <img src="/" alt="LinkedIn icon" class="socialmedia__icon--linkedin">
+              <a href="#" class="socialmedia__icon socialmedia__icon--linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H30C31.1046 0 32 0.895431 32 2V30C32 31.1046 31.1046 32 30 32H2C0.895431 32 0 31.1046 0 30V2Z" fill="#FFB901"/>
+                </svg>
               </a>
             </div>
             <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
               <label for="email" class="visually-hidden">Enter your email</label>
               <input type="email" id="email" class="newsletter-input" placeholder="Enter your Email..." required>
-              <button type="submit" class="newsletter-button" aria-label="Subscribe"><img src="/" alt="Sending email icon" class="sendemail"></button>
+              <button type="submit" class="newsletter-button" aria-label="Subscribe"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.920166 2C0.920166 0.895431 1.8156 0 2.92017 0H30.9202C32.0247 0 32.9202 0.895431 32.9202 2V30C32.9202 31.1046 32.0247 32 30.9202 32H2.92017C1.8156 32 0.920166 31.1046 0.920166 30V2Z" fill="#FFB901"/>
+              </svg></button>
             </form>
           </section>
         </div>
