@@ -40,6 +40,7 @@
     --color-success-hover-text:#0057C2;
     --color-error: #DE6262;
     --color-primary: #19B2DE;
+    --color-icon:#1596BD;
     --color-thrinary: #265787;
     --color-text: #4D4D4D;
     --color--footer: #0E2E4E;
@@ -526,6 +527,8 @@ header {
 .blog__card{
     position: relative;
     width: 100%;
+    height: 100%;
+   overflow: hidden;
 }
 .blog__img{
     width: auto;
@@ -542,7 +545,8 @@ header {
     background-color: var(--color-primary);
     color: var(--color-white);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     overflow: hidden;
@@ -552,7 +556,7 @@ header {
 }
 .blog__date{
     position: absolute;
-    height: 18%;
+    height: 17%;
     width: 20%;
     top:0;
     left:0;
@@ -574,6 +578,9 @@ header {
     font-size: 0.9rem;
 }
 
+.blog__icon{
+    background-color: var(--color-icon);
+}
 
 /* footer */
 
