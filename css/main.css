@@ -294,19 +294,6 @@ header {
         grid-template-rows: auto;
         grid-template-columns: 1fr max-content;
     }
-    .footer__ceo,
-    .footer__columns {
-        display: grid; /* Ensure the footer columns are displayed as a grid */
-        grid-template-columns: repeat(1, 1fr); /* Stack all columns in a single column */
-        
-    }
-    .footer__ceo,
-    .footer__mastodon,
-    .footer__trackus {
-        grid-column: span 1; 
-        width: 100%; 
-        padding: 0;
-    }
 
 }
 
