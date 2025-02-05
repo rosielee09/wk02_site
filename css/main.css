@@ -545,8 +545,8 @@ header {
     background-color: var(--color-primary);
     color: var(--color-white);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 0.2em;
     align-items: center;
     text-align: left;
     overflow: hidden;
@@ -580,6 +580,7 @@ header {
 
 .blog__icon{
     background-color: var(--color-icon);
+    margin-right: 0.5em;
 }
 
 /* footer */
