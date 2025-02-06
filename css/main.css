@@ -42,6 +42,7 @@
     --color-primary: #19B2DE;
     --color-thrinary: #265787;
     --color-text: #4D4D4D;
+    --color-client-logo: #F3F3F3;
     --color--footer: #0E2E4E;
 }
 
@@ -574,6 +575,37 @@ header {
     font-size: 0.9rem;
 }
 
+/* Clients */
+
+.client__logo {
+    display: flex;
+    height: 128px;
+    padding: 0px 16px;
+    align-items: center;
+    align-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    background: var(--color-client-logo);
+}
+
+.client__logo--inkscape,
+client__logo--krita,
+client__logo--godot,
+client__logo--blender,
+client__logo--penpot {
+display: flex;
+width: 179px;
+height: 128px;
+padding: 5px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.client__logo--inkscape{
+margin: 0 auto;
+}
 
 /* footer */
 
