@@ -152,7 +152,7 @@ p {
 .blog__header__title,
 .blog__date--date {
 font-family: Ubuntu;
-font-size: 16px;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -162,7 +162,7 @@ line-height: normal;
 .blog__date--monthyear{
 color: #FFF;
 font-family: Ubuntu;
-font-size: 11px;
+font-size: 0.688rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -358,7 +358,7 @@ header {
         padding: 0;
         width: 100%;
     }
-    
+
     .footer__about{
         grid-column: span 3;
     }
@@ -410,31 +410,33 @@ header {
         flex-grow: 1;
     }
 
-    /* blog */
-    .blog__date__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 5.188rem; 
-        height: 4rem; 
-        padding: 0;
-    }
-
-    .blog_date_subcontainer{
-        width: 100%;
-        height: 100%; 
-    }
     
+ /* blog */
+ .blog__date__container,
+ .blog_date_subcontainer{
+    position: absolute;
+    height: 2.142rem;
+    width: 5.18rem;
+    top:0;
+    left:0;
+    background-color: var(--color-error);
+    align-items: center;
+    padding: 0.125em;
+}
+.blog_date_subcontainer{
+    width: 100%;
+    height: 100%; 
+}
 
-    .blog__date_firstContainer,
-    .blog__title_firstContainer{
-        font-size: 1.75rem;;
-    }
-    .blog_monthyear_firstContainer,
-    .blog__subTitle_firstContainer{
-        font-size: 0.875rem;
-    }
+.blog__header__title,
+.blog__title_subTitle{
+    font-size: 1rem;;
+}
 
+.blog__monthyear_firstContainer,
+.blog__subTitle_firstContainer{
+    font-size: 0.5rem;
+    }
 
     /* footer */
     .footer__about{
@@ -477,6 +479,7 @@ header {
         grid-column-start: 1;
         grid-column-end: -1;
     }
+
 
     .footer__about {
         grid-column: span 3; /* 3 columns */
@@ -569,8 +572,6 @@ header {
 
 
 /* Blog */
-
-
 .blog__card{
     position: relative;
     width: 100%;
@@ -586,7 +587,7 @@ header {
 .blog__header{
     position: absolute;
     width: 100%;
-    height: 18%;
+    height: 3rem;
     bottom: 0;
     left: 0;
     background-color: var(--color-primary);
@@ -599,7 +600,7 @@ header {
     overflow: hidden;
     margin: 0;
     line-height: 0;
-    padding: 1%;
+    padding: 0.6rem;
 }
 
 .blog__header__title{
@@ -612,13 +613,13 @@ header {
 
 .blog__img{
     position: absolute;
-    height: 17%;
-    width: 20%;
+    height: 2.142rem;
+    width: 3.5rem;
     top:0;
     left:0;
     background-color: var(--color-error);
     align-items: center;
-    padding: 0.6em;
+    padding: 0.125em;
 }
 .blog__date{
     color: var(--color-white);
@@ -629,9 +630,8 @@ header {
     padding: 0;
 }
 
-.blog__icon{
-    background-color: var(--color-icon);
-    margin-right: 0.5em;
+.blog__text{
+    padding-left: 0;
 }
 
 /* footer */
