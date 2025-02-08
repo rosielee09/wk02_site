@@ -158,16 +158,24 @@ font-weight: 400;
 line-height: normal;
 }
 
-.blog__header__subTitle,
 .blog__date--monthyear{
-color: #FFF;
-font-family: Ubuntu;
-font-size: 0.688rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
 
+    
+ .blog__header__subTitle{
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
 /*  footer */
 
 .footer__heading{
