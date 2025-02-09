@@ -781,11 +781,11 @@ header {
 }
 
 
-    .hero__background  {
+.hero__background  {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-    }
+}
 
 .hero__flagbanner {
     position: absolute;
@@ -793,7 +793,7 @@ header {
     left: 55px;
 }
 
-    .hero__title {
+.hero__title {
         display: flex;
         flex-direction: column;
         align-items: flex-start; /* Ensures items start from the top */
@@ -802,7 +802,7 @@ header {
         gap: 4px;
         height: auto;
         
-    }   
+}   
 
         .hero__title--metro {
             border-left: 7.735px solid #186AA2;
