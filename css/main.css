@@ -481,7 +481,11 @@ header {
         margin-top:0;
     }
     
-  
+  /* client */
+    .client__logo {
+        padding: 0;
+        justify-content: center;
+    }  
 
     /* hero banner */
     .page__section--hero {
@@ -786,16 +790,15 @@ header {
 .client__logo {
     display: flex;
     height: 128px;
-    padding: 0px 16px;
+    padding: 0 16px;
     align-items: center;
-    align-content: center;
+    align-self: center;
     gap: 32px;
     flex-wrap: wrap;
     background: var(--color-client-logo);
 }
 
 .client__logo--inkscape,
-.client__logo--krita,
 .client__logo--godot,
 .client__logo--blender,
 .client__logo--penpot {
@@ -808,6 +811,11 @@ header {
     gap: 10px;
 }
 
+.client__logo--krita{
+    width: 179px;
+    height: auto;
+    align-items: center;
+}
 
 /* Portfolio */
 .portfolio__item {
