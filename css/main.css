@@ -438,10 +438,18 @@ header {
 
    /* navbar */
     .page__header {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        margin: 0;
         row-gap: 0;
-       
+    }
+    .logo {
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
     }
     .logo {
         justify-content: center;
@@ -609,7 +617,7 @@ header {
         grid-column-end: -1;
     }
 
-}
+
     /* Large Hero banner */
     .hero__title--metro {
         display: flex;
@@ -677,7 +685,7 @@ header {
     }
 
   
-
+}
 
 
 /* ==========================================================================
