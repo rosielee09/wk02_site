@@ -471,7 +471,14 @@ header {
             gap:0.02rem;
      }
 
- 
+     .blog__header--firsttextcontainer{
+        margin: 1rem;
+     }
+     
+     .blog__header--title{
+        padding: 1rem;
+     }
+     
     .blog__date_firstContainer {
         width: 5.188rem;
         height: 4rem;
@@ -1014,7 +1021,7 @@ header {
     overflow: hidden;
     margin: 0;
     line-height: 0;
-    padding: 0.6rem;
+    padding: 1rem;
 }
 
 .blog__header__title{
@@ -1047,6 +1054,7 @@ header {
 
 .blog__header--textcontainer{
     padding: 0;
+    margin-bottom: 10px;
     text-align: left;
 }
 
