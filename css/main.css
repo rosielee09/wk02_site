@@ -529,11 +529,6 @@ header {
         margin-top:0;
     }
     
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> bfb017b (change)
   /* client */
     .client__logo{
         padding: 0;
@@ -841,16 +836,16 @@ header {
         
 }   
 
-        .hero__title--metro {
-            border-left: 7.735px solid #186AA2;
+.hero__title--metro {
+        border-left: 7.735px solid #186AA2;
 
-        }
-        .hero__title--quick {
-                border-left: 7.735px solid #DE6262;
-        }
-        .hero__title--reinvented {
-                border-left: 7.735px solid #FFB901;
-        }
+}
+.hero__title--quick {
+        border-left: 7.735px solid #DE6262;
+}
+.hero__title--reinvented {
+        border-left: 7.735px solid #FFB901;
+}
 
 
 .hero__title--metro,
@@ -910,11 +905,11 @@ header {
 }
 
 
-    .hero__background  {
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
+.hero__background  {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
 .hero__flagbanner {
     position: absolute;
@@ -1203,6 +1198,7 @@ header {
 /* footer */
 
 .page__footer {
+    position: relative;
     width: 100%;
     min-height: 37.375rem;
     padding: 2rem; 
@@ -1306,6 +1302,10 @@ header {
     border: none;
     border-radius: 2px;
 }
+
+/* decorative footer bars */
+
+
 /* ==========================================================================
    2. STATES
    ========================================================================== */
