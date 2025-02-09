@@ -333,6 +333,25 @@ header {
         display: none;
     }
 
+    .s-row-4 {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr max-content;
+    } 
+    .s-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__trackus {
+        order: 1; 
+        grid-column-start: 2;
+        grid-column-end: -1;
+       
+    }
+    .footer__mastodon {
+        order: 2; 
+        grid-column: span 2;
+      }
+
 
     /* Small Service */
 
@@ -599,6 +618,14 @@ header {
     }
     .footer__trackus {
         grid-column: span 2;
+       
+    }
+    .socialmedia__links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .input__email{
+        width: 100%;
     }
 }
 
@@ -685,7 +712,9 @@ header {
     .footer__trackus {
         grid-column: span 2; /* 2 columns */
     }
-
+    .input__email{
+        width: 100%;
+    }
     .l-hide {
         display: none;
     }
@@ -1257,7 +1286,7 @@ header {
     display: flex;
     width: 100%;
     height: 2rem;
-    flex-shrink: 1;
+    flex-shrink: 0;
     align-items: center;
     flex-grow: 1;
 }
