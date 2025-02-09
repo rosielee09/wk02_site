@@ -348,7 +348,10 @@ header {
     .l-hide {
         display: none;
     }
-
+    .page__header{
+        display: flex;
+        align-items: flex-end;
+    }
   
 }
 
@@ -357,10 +360,7 @@ header {
    2. MODULES
    ========================================================================== */
 /* navbar */
-.page__header{
-    display: flex;
-    align-items: flex-end;
-}
+
 .logo {
     display: flex;
     align-items: baseline;
