@@ -306,9 +306,7 @@ main,
 section,
 footer,
 header {
-    outline: 1px solid #ccc;
     min-height: 1rem;
-    padding: 1rem;
 }
 
 
@@ -459,6 +457,8 @@ header {
         align-items: stretch;
         flex-grow: 1;
     }
+
+    
     /* Blog */
     .blog__card{
         width: 37.5rem;
@@ -505,7 +505,6 @@ header {
     /* Medium hero banner */
     .page__section--hero {
         display: flex;
-        width: 100%;
         justify-content: center;
         padding: 0; 
         margin:  0; 
@@ -551,8 +550,6 @@ header {
         font-size: 1.125rem;
         padding-left: 1rem;
     }
-
-    
 
     .hero__background {
         display: flex;
@@ -611,6 +608,12 @@ header {
 
 }
     /* Large Hero banner */
+    .hero__flagbanner {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
     .hero__title--metro {
         display: flex;
         width: 12.5625rem;
@@ -643,6 +646,7 @@ header {
         font-size: 1.5rem; 
         padding: 1rem;
     }
+    
     /* Large Service */
     .service__card {
         grid-column: span 3;
@@ -776,26 +780,9 @@ header {
         margin: 0 auto;
 }
 
-.hero__flagbanner {
-    position: absolute;
-    top: 188px;
-    left: 55px;
-}
-
-.hero__title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Ensures items start from the top */
-        justify-content: flex-start; /* Ensures content starts from the top */
-        height: 64px;
-        gap: 4px;
-        height: auto;
-        
-}   
-
+    /* flag banner - border colors */
         .hero__title--metro {
             border-left: 7.735px solid #186AA2;
-
         }
         .hero__title--quick {
                 border-left: 7.735px solid #DE6262;
@@ -805,16 +792,7 @@ header {
         }
 
 
-.hero__title--metro,
-.hero__title--quick,
-.hero__title--reinvented {
-    background-color: rgba(255,255,255, 0.8);
-    padding: 20px 20px;
-    font-size: clamp(18px, 2vw, 24px);
-    font-weight: 500;
-    line-height: normal;
-            color: #3C3C3C;
-}
+
 
 
 /* nav menu hover states */
@@ -868,18 +846,13 @@ header {
         margin: 0 auto;
     }
 
-.hero__flagbanner {
-    position: absolute;
-    top: 40%;
-    left: 4%;
-}
+
 
     .hero__title {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: auto;
         gap: 4px;
     }   
 
