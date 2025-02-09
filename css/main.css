@@ -248,20 +248,11 @@ p {
     background-color: #EBEBEB;
 }
 
-.hero__title {
-    display: grid;
-    row-gap: 5px;
-    position: absolute;
-    top: 60%;
-    padding-left: 50px;
-}
-
 .hero__title--metro,
 .hero__title--quick,
 .hero__title--reinvented {
     background: rgba(255,255,255, 0.5);
     border-left: 5px solid;
-    padding: 12px;
     
 }
 
@@ -483,7 +474,7 @@ header {
     
   
 
-    /* hero banner */
+    /* Medium hero banner */
     .page__section--hero {
         display: flex;
         width: 100%;
@@ -500,12 +491,40 @@ header {
         left: 1rem;
     }
 
-    .hero__title {
-        align-items: flex-start; /* Ensures items start from the top */
-        justify-content: flex-start; /* Ensures content starts from the top */
+    .hero__title--metro {
+        display: flex;
+        width: 8.5625rem;
         height: 2.75rem;
-        gap: 4px;
-    } 
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.125rem;
+        padding-left: 1rem;
+    }
+
+    .hero__title--quick {
+        display: flex;
+        width: 11.98731rem;
+        height: 2.75rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.125rem;
+        padding-left: 1rem;
+    }
+
+    .hero__title--reinvented {
+        display: flex;
+        width: 16rem;
+        height: 2.75rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.125rem;
+        padding-left: 1rem;
+    }
+
+    
 
     .hero__background {
         display: flex;
@@ -556,6 +575,39 @@ header {
         grid-column-end: -1;
     }
 
+    /* Large Hero banner */
+    .hero__title--metro {
+        display: flex;
+        width: 12.5625rem;
+        height: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;   
+        font-size: 1.5rem; 
+        padding: 1rem;
+    }
+
+    .hero__title--quick {
+        display: flex;
+        width: 17rem;
+        height: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.5rem; 
+        padding: 1rem;
+    }
+
+    .hero__title--reinvented {
+        display: flex;
+        width: 21.3125rem;
+        height: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.5rem; 
+        padding: 1rem;
+    }
 
     .footer__about {
         grid-column: span 3; /* 3 columns */
@@ -704,11 +756,9 @@ header {
 .hero__title--quick,
 .hero__title--reinvented {
     background-color: rgba(255,255,255, 0.8);
-    padding: 1.2rem 20px;
-    font-size: clamp(18px, 2vw, 1.5rem);
     font-weight: 500;
     line-height: normal;
-            color: #3C3C3C;
+    color: #3C3C3C;
 }
 
 /* Intro */
