@@ -472,11 +472,11 @@ header {
         width: 37.5rem;
     }
     .blog_date_subcontainer{
-            width: 5.188rem;
-            height: 4rem;
-            display: flex;
-            background-color: var(--color-error);
-            gap:0.02rem;
+        width: 5.188rem;
+        height: 4rem;
+        display: flex;
+        background-color: var(--color-error);
+        gap:0.02rem;
      }
 
      .blog__header--firsttextcontainer{
@@ -484,8 +484,8 @@ header {
      }
      
      .blog__header--title{
-        padding: 1rem;
-     }
+        padding: 0.5rem;
+       }
      
     .blog__date_firstContainer {
         width: 5.188rem;
@@ -500,6 +500,7 @@ header {
     
     .blog__Title_firstContainer{
         font-size: 1.5rem;
+        margin-top: 0.3rem;
     }
     .blog_monthyear_firstContainer,
     .blog__subTitle_firstContainer {
@@ -1041,7 +1042,7 @@ header {
 }
 
 .blog__header__subTitle{
-    margin-top: 0.4em;
+    margin-top: 0.2em;
 }
 
 .blog__img{
