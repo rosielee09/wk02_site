@@ -237,12 +237,14 @@ p {
     color: var(--color-primary);
 }
 
-
-
-
-
-
-
+.input__email::placeholder{
+    color: var(--color-white);
+    font-family: "Myriad Pro";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 /* Hero Banner */
 .page__section--hero {
     background-color: #EBEBEB;
@@ -321,7 +323,6 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(242, 230, 177);
     padding: 1rem;
 }
 
@@ -334,12 +335,26 @@ header {
         display: none;
     }
 
-    .s-row-4 {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr max-content;
+
+    /* Small Service */
+
+    .service__text {
+            flex-grow: 1;
     }
 
+    .service__contents {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 1rem;
+        }
+    
+        .service__icon--header {
+                width: 40%;
+                flex-grow: 1;
+                justify-content: center;
+        }
 }
 
 
@@ -384,7 +399,24 @@ header {
         width: 100%;
     }
 
+    /* Medium+ Services */
+    .service__card {
+        display: grid;
+        padding: 0;
 
+        grid-column: span 3;
+        gap: 2rem;
+    }
+
+
+
+
+
+    
+
+    .service__icon {
+        margin: auto;
+    }
 
     .footer__about{
         grid-column: span 3;
@@ -532,7 +564,12 @@ header {
         height: 20rem;
         flex-shrink: 0;
     }
-
+    
+    /* Medium Services */
+    .service__title {
+        display: grid;
+        justify-content: center;
+    }
 
     /* footer */
     .footer__about{
@@ -575,6 +612,7 @@ header {
         grid-column-end: -1;
     }
 
+
     /* Large Hero banner */
     .hero__title--metro {
         display: flex;
@@ -607,6 +645,16 @@ header {
         flex-shrink: 0;
         font-size: 1.5rem; 
         padding: 1rem;
+
+    /* Large Service */
+    .service__card {
+        grid-column: span 3;
+    }
+
+    .service__title {
+        display: grid;
+        justify-content: center;
+
     }
 
     .footer__about {
@@ -625,6 +673,12 @@ header {
     .l-hide {
         display: none;
     }
+
+    .page__header{
+        display: flex;
+        align-items: flex-end;
+    }
+  
 }
 
 
@@ -632,18 +686,24 @@ header {
    2. MODULES
    ========================================================================== */
 /* navbar */
+
 .logo {
-    padding-left: 0;
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 1rem 0 0;
 }
 
 .logo__text {
-    font-size: 2rem;
+    font-size: 2rem; 
     
 }
+
 .logo__icon {
-    width: 16px;
-    height: auto;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
     margin-left: 0.625rem;
+   
 }
 
 .menu {
@@ -673,16 +733,10 @@ header {
     background-color: var(--color-success);
 }
 
-.menu__item--home:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__link:hover{
-    color: var(--color-success-hover-text);
-}
-
 .menu__item--portfolio {
     background-color: var(--color-accent);
 }
+
 .menu__item--blog {
     background-color: var(--color-error);
 }
@@ -690,16 +744,36 @@ header {
 .menu__item--quo {
     background-color: var(--color-primary);
 }
-
 .menu__item--chat {
     background-color: var(--color-thrinary);
 }
+
+
+/* nav menu hover states */
+.menu__link:hover{
+    color: var(--color-success-hover-text);
+}
+.menu__item--home:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--blog:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--portfolio:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--quo:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--chat:hover {
+    background-color: var(--color-success-hover);
 
  /* Hero Banner */
  .page__main {
     padding: 0;
     margin: 0;
     overflow: hidden;
+
 }
 
 .page__section--hero {
@@ -764,6 +838,77 @@ header {
 /* Intro */
 .page__section--intro {
     padding: 3rem 0;
+}
+/* Services */
+.page__section--service {
+    padding-top: 4.34rem;
+    padding-bottom: 4.34rem;
+}
+
+.section__header__title {
+    line-height: 0;
+}
+.section__header__subtitle {
+    color: #A3A3A3;
+    text-align: center;
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.service__icon--header {
+    height: auto;
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+
+.service__text {
+    height: 8.688rem;
+}
+
+.service__icon {
+    width: 5.25rem;
+    height: 5.25rem;
+    padding-right: 1rem;
+    border: 3px solid ;
+    border-radius: 0.25rem;
+
+}
+
+.service__title {
+    color: #545454;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    margin-top: 0;
+
+}
+
+.service__description {
+    color: #939393;
+    text-align: justify;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service__icon--lightbulb {
+    border-color: var(--color-accent);
+}
+
+.service__icon--camera {
+    border-color: var(--color-success);
+}
+
+.service__icon--click {
+    border-color: var(--color-error);
+}
+
+.service__icon--draw {
+    border-color: #1596BD;
 }
 
 
@@ -1007,9 +1152,33 @@ header {
     flex-shrink: 0;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 1rem;
 }
 
+.form__newsletter{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    flex-shrink: 1;
+    align-items: center;
+    flex-grow: 1;
+}
+.input__email{
+    background-color:var(--color-error);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem;
+    
+}
 
+.button__newsletter{
+    background-color: var(--color-accent);
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 2px;
+}
 /* ==========================================================================
    2. STATES
    ========================================================================== */
@@ -1179,3 +1348,7 @@ header {
         page-break-after: avoid;
     }
 }
+
+
+
+
