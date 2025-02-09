@@ -426,7 +426,6 @@ header {
         margin: auto;
     }
 
-
     .footer__about{
         grid-column: span 3;
     }
@@ -492,11 +491,11 @@ header {
         width: 37.5rem;
     }
     .blog_date_subcontainer{
-            width: 5.188rem;
-            height: 4rem;
-            display: flex;
-            background-color: var(--color-error);
-            gap:0.02rem;
+        width: 5.188rem;
+        height: 4rem;
+        display: flex;
+        background-color: var(--color-error);
+        gap:0.02rem;
      }
 
      .blog__header--firsttextcontainer{
@@ -504,8 +503,9 @@ header {
      }
      
      .blog__header--title{
-        padding: 1rem;
-     }
+        padding: 0.5rem;
+        height: 4.3rem;
+       }
      
     .blog__date_firstContainer {
         width: 5.188rem;
@@ -520,6 +520,7 @@ header {
     
     .blog__Title_firstContainer{
         font-size: 1.5rem;
+        margin-top: 0.3rem;
     }
     .blog_monthyear_firstContainer,
     .blog__subTitle_firstContainer {
@@ -1046,23 +1047,23 @@ header {
 }
 
 .blog__header__subTitle{
-    margin-top: 0.4em;
+    margin-top: 0.2em;
 }
 
-.blog__img{
+.blog__dateContainer{
     position: absolute;
     height: 2.142rem;
     width: 3.5rem;
     top:0;
     left:0;
     background-color: var(--color-error);
+    color: var(--color-white);
     align-items: center;
     padding: 0.125em;
 }
 
 .blog__date{
-    color: var(--color-white);
-    display: flex;
+       display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1071,7 +1072,7 @@ header {
 
 .blog__header--textcontainer{
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     text-align: left;
 }
 
