@@ -43,7 +43,6 @@
     --color-icon:#1596BD;
     --color-thrinary: #265787;
     --color-text: #4D4D4D;
-    --color-client-logo: #F3F3F3;
     --color--footer: #0E2E4E;
 }
 
@@ -92,6 +91,10 @@ textarea {
     resize: vertical;
 }
 
+
+em {
+    font-style: normal;
+}
 ol,
 ul,
 li {
@@ -138,15 +141,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 300;
     text-align: center;
-}
-
-h1 {
-    font-size: 2.125rem;
-    font-weight: 400;
-    line-height: 3rem;
 }
 
 div {
@@ -157,7 +154,6 @@ div {
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
-
 
 .menu__text {
     /* Main_Menu_Link */
@@ -178,11 +174,11 @@ p {
 /* blog  */
 .blog__header__title,
 .blog__date--date {
-    font-family: Ubuntu;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+font-family: Ubuntu;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .blog__date--monthyear{
@@ -296,15 +292,6 @@ p {
     text-align: justify;
 }
 
-/* Portfolio */
-.portfolio__overlay--title {
-    font-size: 1rem;
-}
-
-.portfolio__overlay--subTitle {
-    font-size: 0.688;
-}
-
 
 
 /* ==========================================================================
@@ -319,8 +306,9 @@ main,
 section,
 footer,
 header {
+    outline: 1px solid #ccc;
     min-height: 1rem;
-    padding: 0px;
+    padding: 1rem;
 }
 
 
@@ -368,7 +356,6 @@ header {
 }
 
 
-
 /* 2.3 medium and up */
 
 @media screen and (min-width: 40em) {
@@ -413,20 +400,14 @@ header {
     .service__card {
         display: grid;
         padding: 0;
-
         grid-column: span 3;
         gap: 2rem;
-    }
-
-
-
-
-
-    
+    }    
 
     .service__icon {
         margin: auto;
     }
+
 
     .footer__about{
         grid-column: span 3;
@@ -441,7 +422,6 @@ header {
         grid-column: span 2;
     }
  
-
 }
 
 
@@ -479,7 +459,6 @@ header {
         align-items: stretch;
         flex-grow: 1;
     }
-
     /* Blog */
     .blog__card{
         width: 37.5rem;
@@ -491,6 +470,8 @@ header {
             background-color: var(--color-error);
             gap:0.02rem;
      }
+
+ 
     .blog__date_firstContainer {
         width: 5.188rem;
         height: 4rem;
@@ -514,6 +495,7 @@ header {
         margin-top:0;
     }
     
+
   /* client */
     .client__logo{
         padding: 0;
@@ -584,6 +566,7 @@ header {
         display: grid;
         justify-content: center;
     }
+
 
     /* footer */
     .footer__about{
@@ -692,6 +675,7 @@ header {
         display: flex;
         align-items: flex-end;
     }
+
   
 }
 
@@ -1013,11 +997,6 @@ header {
     height: 100%;
    overflow: hidden;
 }
-.blog__img{
-    width: auto;
-    height: auto;
-    
-}
 
 .blog__header{
     position: absolute;
@@ -1056,6 +1035,7 @@ header {
     align-items: center;
     padding: 0.125em;
 }
+
 .blog__date{
     color: var(--color-white);
     display: flex;
@@ -1065,11 +1045,11 @@ header {
     padding: 0;
 }
 
-
 .blog__header--textcontainer{
     padding: 0;
     text-align: left;
 }
+
 /* Clients */
 .client__logo {
     display: flex;
@@ -1169,6 +1149,7 @@ header {
   margin: 0 auto;
 
 }
+
 
 /* footer */
 
