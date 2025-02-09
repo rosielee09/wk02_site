@@ -420,6 +420,9 @@ header {
         flex-grow: 1;
     }
     /* Blog */
+    .blog__card{
+        width: 37.5rem;
+    }
     .blog_date_subcontainer{
             width: 5.188rem;
             height: 4rem;
