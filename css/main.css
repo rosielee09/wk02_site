@@ -398,16 +398,10 @@ header {
     background-color: var(--color-success);
 }
 
-.menu__item--home:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__link:hover{
-    color: var(--color-success-hover-text);
-}
-
 .menu__item--portfolio {
     background-color: var(--color-accent);
 }
+
 .menu__item--blog {
     background-color: var(--color-error);
 }
@@ -415,11 +409,29 @@ header {
 .menu__item--quo {
     background-color: var(--color-primary);
 }
-
 .menu__item--chat {
     background-color: var(--color-thrinary);
 }
 
+/* nav menu hover states */
+.menu__link:hover{
+    color: var(--color-success-hover-text);
+}
+.menu__item--home:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--blog:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--portfolio:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--quo:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--chat:hover {
+    background-color: var(--color-success-hover);
+}
 
 
 /* Blog */
