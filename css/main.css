@@ -642,7 +642,7 @@ header {
         flex-shrink: 0;
         font-size: 1.5rem; 
         padding: 1rem;
-
+    }
     /* Large Service */
     .service__card {
         grid-column: span 3;
@@ -677,7 +677,7 @@ header {
     }
 
   
-}
+
 
 
 /* ==========================================================================
