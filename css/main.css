@@ -299,7 +299,7 @@ p {
 }
 
 .portfolio__overlay--subTitle {
-    font-size: 0.688;
+    font-size: 0.688rem;
 }
 
 
@@ -666,7 +666,7 @@ header {
     background-color: var(--color-success-hover);
 }
 .menu__item--chat:hover {
-    background-color: var(--color-success-hover);
+    background-color: var(--color-success-hover);}
 
  /* Hero Banner */
  .page__main {
