@@ -295,7 +295,20 @@ header {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr max-content;
+    } 
+    .s-col-2 {
+        grid-template-columns: 1fr 1fr;
     }
+    .footer__trackus {
+        order: 1; 
+        grid-column-start: 2;
+        grid-column-end: -1;
+       
+    }
+    .footer__mastodon {
+        order: 2; 
+        grid-column: span 2;
+      }
 
 }
 
