@@ -573,6 +573,12 @@ header {
     .l-hide {
         display: none;
     }
+
+    .page__header{
+        display: flex;
+        align-items: flex-end;
+    }
+  
 }
 
 
@@ -580,18 +586,24 @@ header {
    2. MODULES
    ========================================================================== */
 /* navbar */
+
 .logo {
-    padding-left: 0;
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 1rem 0 0;
 }
 
 .logo__text {
-    font-size: 2rem;
+    font-size: 2rem; 
     
 }
+
 .logo__icon {
-    width: 16px;
-    height: auto;
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
     margin-left: 0.625rem;
+   
 }
 
 .menu {
@@ -621,16 +633,10 @@ header {
     background-color: var(--color-success);
 }
 
-.menu__item--home:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__link:hover{
-    color: var(--color-success-hover-text);
-}
-
 .menu__item--portfolio {
     background-color: var(--color-accent);
 }
+
 .menu__item--blog {
     background-color: var(--color-error);
 }
@@ -638,16 +644,36 @@ header {
 .menu__item--quo {
     background-color: var(--color-primary);
 }
-
 .menu__item--chat {
     background-color: var(--color-thrinary);
 }
+
+
+/* nav menu hover states */
+.menu__link:hover{
+    color: var(--color-success-hover-text);
+}
+.menu__item--home:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--blog:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--portfolio:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--quo:hover {
+    background-color: var(--color-success-hover);
+}
+.menu__item--chat:hover {
+    background-color: var(--color-success-hover);
 
  /* Hero Banner */
  .page__main {
     padding: 0;
     margin: 0;
     overflow: hidden;
+
 }
 
 .page__section--hero {
