@@ -43,6 +43,7 @@
     --color-icon:#1596BD;
     --color-thrinary: #265787;
     --color-text: #4D4D4D;
+    --color-client-logo: #F3F3F3;
     --color--footer: #0E2E4E;
 }
 
@@ -91,8 +92,17 @@ textarea {
     resize: vertical;
 }
 
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
 em {
-    font-style: normal;
+    font-style: normal;    
+}
+
+.highlight {
     color: var(--color-primary);
 }
 
@@ -118,9 +128,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 3rem;
 }
 
 div {
@@ -131,6 +147,7 @@ div {
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
 
 .menu__text {
     /* Main_Menu_Link */
@@ -151,11 +168,11 @@ p {
 /* blog  */
 .blog__header__title,
 .blog__date--date {
-font-family: Ubuntu;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .blog__date--monthyear{
@@ -290,9 +307,8 @@ main,
 section,
 footer,
 header {
-    outline: 1px solid #ccc;
     min-height: 1rem;
-    padding: 1rem;
+    padding: 0px;
 }
 
 
@@ -325,6 +341,7 @@ header {
     }
 
 }
+
 
 
 /* 2.3 medium and up */
@@ -367,7 +384,6 @@ header {
         width: 100%;
     }
 
- 
 
     .footer__about{
         grid-column: span 3;
@@ -419,6 +435,7 @@ header {
         align-items: stretch;
         flex-grow: 1;
     }
+
     /* Blog */
     .blog__card{
         width: 37.5rem;
@@ -454,6 +471,39 @@ header {
     }
     
   
+
+    /* hero banner */
+    .page__section--hero {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0; 
+        margin:  0; 
+        background-color: #EBEBEB;
+    }
+
+    .hero__flagbanner {
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 1rem;
+    }
+
+    .hero__title {
+        align-items: flex-start; /* Ensures items start from the top */
+        justify-content: flex-start; /* Ensures content starts from the top */
+        height: 2.75rem;
+        gap: 4px;
+    } 
+
+    .hero__background {
+        display: flex;
+        width: 58.5rem;
+        height: 20rem;
+        flex-shrink: 0;
+    }
+
+
     /* footer */
     .footer__about{
         grid-column: span 3;
@@ -512,8 +562,6 @@ header {
     .l-hide {
         display: none;
     }
-
-  
 }
 
 
@@ -584,7 +632,77 @@ header {
     background-color: var(--color-thrinary);
 }
 
+ /* Hero Banner */
+ .page__main {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 
+.page__section--hero {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #EBEBEB;
+
+}
+
+.hero__content {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+    .hero__background  {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+.hero__flagbanner {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+    .hero__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: auto;
+        gap: 4px;
+    }   
+
+        .hero__title--metro {
+            border-left: 7.735px solid #186AA2;
+
+        }
+        .hero__title--quick {
+                border-left: 7.735px solid #DE6262;
+        }
+        .hero__title--reinvented {
+                border-left: 7.735px solid #FFB901;
+        }
+
+
+.hero__title--metro,
+.hero__title--quick,
+.hero__title--reinvented {
+    background-color: rgba(255,255,255, 0.8);
+    padding: 1.2rem 20px;
+    font-size: clamp(18px, 2vw, 1.5rem);
+    font-weight: 500;
+    line-height: normal;
+            color: #3C3C3C;
+}
+
+/* Intro */
+.page__section--intro {
+    padding: 3rem 0;
+}
 
 /* Blog */
 .blog__card{
@@ -645,9 +763,40 @@ header {
     padding: 0;
 }
 
+
 .blog__header--textcontainer{
     padding: 0;
     text-align: left;
+}
+/* Clients */
+
+.client__logo {
+    display: flex;
+    height: 128px;
+    padding: 0px 16px;
+    align-items: center;
+    align-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    background: var(--color-client-logo);
+}
+
+.client__logo--inkscape,
+.client__logo--krita,
+.client__logo--godot,
+.client__logo--blender,
+.client__logo--penpot {
+    display: flex;
+    width: 179px;
+    height: 128px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.client__logo--inkscape{
+  margin: 0 auto;
 }
 
 /* footer */
