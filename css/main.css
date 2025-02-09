@@ -98,7 +98,17 @@ li {
     list-style-type: none;
 }
 
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
 em {
+    font-style: normal;    
+}
+
+.highlight {
     font-style: normal;    
 }
 
@@ -749,6 +759,76 @@ header {
 }
 
 
+/* Hero Banner */
+.page__main {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.page__section--hero {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #EBEBEB;
+
+}
+
+.hero__content {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+    .hero__background  {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+.hero__flagbanner {
+    position: absolute;
+    top: 188px;
+    left: 55px;
+}
+
+    .hero__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ensures items start from the top */
+        justify-content: flex-start; /* Ensures content starts from the top */
+        height: 64px;
+        gap: 4px;
+        height: auto;
+        
+    }   
+
+        .hero__title--metro {
+            border-left: 7.735px solid #186AA2;
+
+        }
+        .hero__title--quick {
+                border-left: 7.735px solid #DE6262;
+        }
+        .hero__title--reinvented {
+                border-left: 7.735px solid #FFB901;
+        }
+
+
+.hero__title--metro,
+.hero__title--quick,
+.hero__title--reinvented {
+    background-color: rgba(255,255,255, 0.8);
+    padding: 20px 20px;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 500;
+    line-height: normal;
+            color: #3C3C3C;
+}
+
+
 /* nav menu hover states */
 .menu__link:hover{
     color: var(--color-success-hover-text);
@@ -767,6 +847,7 @@ header {
 }
 .menu__item--chat:hover {
     background-color: var(--color-success-hover);
+
 
  /* Hero Banner */
  .page__main {
@@ -909,6 +990,15 @@ header {
 
 .service__icon--draw {
     border-color: #1596BD;
+}
+
+.intro {
+    font-family: Ubuntu;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #3B3B3B;
+    text-align: center;
 }
 
 
