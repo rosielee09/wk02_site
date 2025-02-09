@@ -609,7 +609,7 @@ header {
         grid-column-end: -1;
     }
 
-
+}
     /* Large Hero banner */
     .hero__title--metro {
         display: flex;
@@ -836,7 +836,7 @@ header {
 .menu__item--chat:hover {
     background-color: var(--color-success-hover);
 
-
+}
  /* Hero Banner */
  .page__main {
     padding: 0;
@@ -1425,3 +1425,4 @@ header {
     h3 {
         page-break-after: avoid;
     }
+}
