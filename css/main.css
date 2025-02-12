@@ -1216,7 +1216,8 @@ header {
     position: relative;
     width: 100%;
     min-height: 37.375rem;
-    padding: 2rem; 
+    padding: 0; 
+    background-color: var(--color--footer);
     
 }
 .footer__heading{
@@ -1225,8 +1226,7 @@ header {
 }
 
 .footer__content {
-    grid-template-rows: auto;
-    background-color: var(--color--footer);
+    grid-template-rows: auto; 
     color: var(--color-white);
   
 }
