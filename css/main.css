@@ -1213,10 +1213,10 @@ header {
 /* footer */
 
 .page__footer {
-    position: relative;
+
     width: 100%;
     min-height: 37.375rem;
-    padding: 0; 
+    margin-top: 4rem; 
     background-color: var(--color--footer);
     
 }
@@ -1226,10 +1226,25 @@ header {
 }
 
 .footer__content {
+    position: relative;
     grid-template-rows: auto; 
     color: var(--color-white);
   
 }
+.footer__content::after {
+    content: "";              /* Correct placement */
+    position: absolute;       /* Position relative to .footer__content */
+    bottom: 0;
+    left: 0;
+
+    background-image: url('./img/BG_ColourBar.svg'); /* Correct path */
+    background-size: contain;   /* Ensures the SVG scales proportionally */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+
+    width: 150px;   /* Add a width */
+    height: 20px;   /* Add a height */
+}
+
 .footer__ceo {
     display: flex;
     align-items: center;
