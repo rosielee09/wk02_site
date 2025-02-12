@@ -1086,6 +1086,10 @@ header {
     text-align: left;
 }
 
+.section__header{
+    margin-bottom: 2rem;
+    margin-top: 4.5rem;
+}
 /* Clients */
 .client__logo {
     display: flex;
