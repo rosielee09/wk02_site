@@ -717,6 +717,25 @@ header {
         grid-column-end: -1;
     }
 
+    /* nav menu hover states */
+    .menu__link:hover{
+        color: var(--color-success-hover-text);
+    }
+    .menu__item--home:hover {
+        background-color: var(--color-success-hover);
+    }
+    .menu__item--blog:hover {
+        background-color: var(--color-success-hover);
+    }
+    .menu__item--portfolio:hover {
+        background-color: var(--color-success-hover);
+    }
+    .menu__item--quo:hover {
+        background-color: var(--color-success-hover);
+    }
+    .menu__item--chat:hover {
+        background-color: var(--color-success-hover);
+    }
 
     /* Large Hero banner */
     .hero__flagbanner {
@@ -934,29 +953,6 @@ header {
         border-left: 7.735px solid #FFB901;
 }
 
-
-
-
-
-/* nav menu hover states */
-.menu__link:hover{
-    color: var(--color-success-hover-text);
-}
-.menu__item--home:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__item--blog:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__item--portfolio:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__item--quo:hover {
-    background-color: var(--color-success-hover);
-}
-.menu__item--chat:hover {
-    background-color: var(--color-success-hover);
-}
 
 
  /* Hero Banner */
