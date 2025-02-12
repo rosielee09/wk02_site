@@ -293,6 +293,23 @@ line-height: normal;
     text-align: justify;
 }
 
+/* Portfolio */
+.portfolio__overlay--title {
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.portfolio__overlay--subTitle {
+    font-family: Ubuntu;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 
 /* ==========================================================================
@@ -709,6 +726,19 @@ header {
         width: 3.5rem;
     }
   
+    /* client  */
+
+    .portfolio__item:hover .portfolio__overlay {
+        opacity: 0.8; 
+        background-color: var(--color-primary); 
+    }
+
+    .portfolio__item:hover .portfolio__overlay--title,
+    .portfolio__item:hover .portfolio__overlay--subTitle 
+    .portfolio__item:hover .portfolio__overlay--icon {
+        opacity: 1;
+
+    }
     .footer__about {
         grid-column: span 3; /* 3 columns */
     }
@@ -738,7 +768,6 @@ header {
 
 =======
   
-}
 >>>>>>> 71e1cd44fc3f3db3cc140423384ea4c1562ca826
 
 
@@ -870,7 +899,7 @@ header {
     background-color: var(--color-success-hover);
 }
 .menu__item--chat:hover {
-    background-color: var(--color-success-hover);
+    background-color: var(--color-success-hover);}
 
 }
  /* Hero Banner */
@@ -1176,17 +1205,6 @@ header {
  
 }
 
-.portfolio__item:hover .portfolio__overlay {
-    opacity: 0.8; 
-    background-color: var(--color-primary); 
-}
-
-.portfolio__item:hover .portfolio__overlay--title,
-.portfolio__item:hover .portfolio__overlay--subTitle 
-.portfolio__item:hover .portfolio__overlay--icon {
-    opacity: 1;
-
-}
 .client__logo--inkscape{
   margin: 0 auto;
 
