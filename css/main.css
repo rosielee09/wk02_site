@@ -44,6 +44,7 @@
     --color-thrinary: #265787;
     --color-text: #4D4D4D;
     --color--footer: #0E2E4E;
+    --color-client:#F3F3F3;
 }
 
 
@@ -306,9 +307,7 @@ main,
 section,
 footer,
 header {
-    outline: 1px solid #ccc;
     min-height: 1rem;
-    padding: 1rem;
 }
 
 
@@ -427,7 +426,6 @@ header {
         margin: auto;
     }
 
-
     .footer__about{
         grid-column: span 3;
     }
@@ -486,16 +484,18 @@ header {
         align-items: stretch;
         flex-grow: 1;
     }
+
+    
     /* Blog */
     .blog__card{
         width: 37.5rem;
     }
     .blog_date_subcontainer{
-            width: 5.188rem;
-            height: 4rem;
-            display: flex;
-            background-color: var(--color-error);
-            gap:0.02rem;
+        width: 5.188rem;
+        height: 4rem;
+        display: flex;
+        background-color: var(--color-error);
+        gap:0.02rem;
      }
 
      .blog__header--firsttextcontainer{
@@ -503,8 +503,9 @@ header {
      }
      
      .blog__header--title{
-        padding: 1rem;
-     }
+        padding: 0.5rem;
+        height: 4.3rem;
+       }
      
     .blog__date_firstContainer {
         width: 5.188rem;
@@ -519,6 +520,7 @@ header {
     
     .blog__Title_firstContainer{
         font-size: 1.5rem;
+        margin-top: 0.3rem;
     }
     .blog_monthyear_firstContainer,
     .blog__subTitle_firstContainer {
@@ -533,12 +535,12 @@ header {
     .client__logo{
         padding: 0;
         justify-content: center;
+
     }  
 
     /* Medium hero banner */
     .page__section--hero {
         display: flex;
-        width: 100%;
         justify-content: center;
         padding: 0; 
         margin:  0; 
@@ -548,7 +550,7 @@ header {
     .hero__flagbanner {
         display: flex;
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 1rem;
     }
 
@@ -584,8 +586,6 @@ header {
         font-size: 1.125rem;
         padding-left: 1rem;
     }
-
-    
 
     .hero__background {
         display: flex;
@@ -652,6 +652,12 @@ header {
 
 
     /* Large Hero banner */
+    .hero__flagbanner {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
     .hero__title--metro {
         display: flex;
         width: 12.5625rem;
@@ -684,6 +690,7 @@ header {
         font-size: 1.5rem; 
         padding: 1rem;
     }
+    
     /* Large Service */
     .service__card {
         grid-column: span 3;
@@ -695,6 +702,7 @@ header {
 
     }
 
+  
     .footer__about {
         grid-column: span 3; /* 3 columns */
     }
@@ -719,8 +727,10 @@ header {
         align-items: flex-end;
     }
 
-  
 }
+
+  
+
 
 
 /* ==========================================================================
@@ -819,26 +829,9 @@ header {
         margin: 0 auto;
 }
 
-.hero__flagbanner {
-    position: absolute;
-    top: 188px;
-    left: 55px;
-}
-
-.hero__title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Ensures items start from the top */
-        justify-content: flex-start; /* Ensures content starts from the top */
-        height: 64px;
-        gap: 4px;
-        height: auto;
-        
-}   
-
+    /* flag banner - border colors */
 .hero__title--metro {
         border-left: 7.735px solid #186AA2;
-
 }
 .hero__title--quick {
         border-left: 7.735px solid #DE6262;
@@ -848,16 +841,7 @@ header {
 }
 
 
-.hero__title--metro,
-.hero__title--quick,
-.hero__title--reinvented {
-    background-color: rgba(255,255,255, 0.8);
-    padding: 20px 20px;
-    font-size: clamp(18px, 2vw, 24px);
-    font-weight: 500;
-    line-height: normal;
-            color: #3C3C3C;
-}
+
 
 
 /* nav menu hover states */
@@ -911,18 +895,13 @@ header {
     margin: 0 auto;
 }
 
-.hero__flagbanner {
-    position: absolute;
-    top: 40%;
-    left: 4%;
-}
+
 
     .hero__title {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: auto;
         gap: 4px;
     }   
 
@@ -1065,23 +1044,23 @@ header {
 }
 
 .blog__header__subTitle{
-    margin-top: 0.4em;
+    margin-top: 0.2em;
 }
 
-.blog__img{
+.blog__dateContainer{
     position: absolute;
     height: 2.142rem;
     width: 3.5rem;
     top:0;
     left:0;
     background-color: var(--color-error);
+    color: var(--color-white);
     align-items: center;
     padding: 0.125em;
 }
 
 .blog__date{
-    color: var(--color-white);
-    display: flex;
+       display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1090,7 +1069,7 @@ header {
 
 .blog__header--textcontainer{
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     text-align: left;
 }
 
@@ -1101,9 +1080,9 @@ header {
     padding: 0 10px;
     align-items: center;
     align-self: center;
-    gap: 2rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
-    background: var(--color-client-logo);
+    background: var(--color-client);
 }
 
 .client__logo--inkscape,
@@ -1111,7 +1090,7 @@ header {
 .client__logo--blender,
 .client__logo--penpot {
     display: flex;
-    width: 179px;
+    max-width: 179px;
     height: 128px;
     padding: 5px;
     justify-content: center;
