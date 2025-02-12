@@ -388,6 +388,22 @@ header {
                 flex-grow: 1;
                 justify-content: center;
         }
+        /* footer */
+        .footer__mastodon {
+            margin-bottom: 4rem;
+        }
+
+        .footer__decobar {
+            position: absolute;       /* Position relative to .footer__content */
+            bottom: 0;
+            left: 0;  
+            background-image: url('../img/BG_ColourBar.svg');
+            background-repeat: no-repeat; 
+            background-size: cover;
+            width: 100%;
+            height: 1rem;;
+         
+        }
 }
 
 
@@ -451,9 +467,11 @@ header {
     }
     .footer__mastodon {
         grid-column: span 4;
+        
     }
     .footer__trackus {
         grid-column: span 2;
+        
     }
  
 }
@@ -628,7 +646,9 @@ header {
     }
     .footer__mastodon {
         grid-column: span 4;
+        margin-bottom: 4rem;
     }
+
     .footer__trackus {
         grid-column: span 2;
        
@@ -639,6 +659,18 @@ header {
     }
     .input__email{
         width: 100%;
+    }
+
+    .footer__decobar {
+        position: absolute;       /* Position relative to .footer__content */
+        bottom: 0;
+        left: 0;  
+        background-image: url('../img/BG_ColourBar.svg');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width: 65%;
+        height: 1rem;;
+     
     }
 }
 
@@ -739,6 +771,7 @@ header {
         opacity: 1;
 
     }
+    /* footer */
     .footer__about {
         grid-column: span 3; /* 3 columns */
     }
@@ -756,6 +789,15 @@ header {
     }
     .l-hide {
         display: none;
+    }
+    .footer__decobar {
+        grid-column: span 3;
+        background-image: url('../img/BG_ColourBar.svg');
+        background-repeat: no-repeat;   
+        padding-bottom: 0;     
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .page__header{
@@ -1213,7 +1255,7 @@ header {
 /* footer */
 
 .page__footer {
-
+    position: relative;
     width: 100%;
     min-height: 37.375rem;
     margin-top: 4rem; 
@@ -1226,24 +1268,10 @@ header {
 }
 
 .footer__content {
-    position: relative;
     grid-template-rows: auto; 
     color: var(--color-white);
-  
 }
-.footer__content::after {
-    content: "";              /* Correct placement */
-    position: absolute;       /* Position relative to .footer__content */
-    bottom: 0;
-    left: 0;
 
-    background-image: url('./img/BG_ColourBar.svg'); /* Correct path */
-    background-size: contain;   /* Ensures the SVG scales proportionally */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
-
-    width: 150px;   /* Add a width */
-    height: 20px;   /* Add a height */
-}
 
 .footer__ceo {
     display: flex;
