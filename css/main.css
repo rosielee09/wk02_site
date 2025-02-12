@@ -179,6 +179,15 @@ p {
     line-height: 91%; /* 16.38px */
 }
 
+.intro {
+    font-family: Ubuntu;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #3B3B3B;
+    text-align: center;
+}
+
 /* blog  */
 .blog__header__title,
 .blog__date--date {
@@ -364,7 +373,14 @@ header {
     .s-col-3 {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    .logo,
+    .intro,
+    .page__section {
+        padding: 0 1rem;
+    }
+    .logo__text{
+        margin-left: 1rem;
+    }
 
     /* Small Service */
 
@@ -379,12 +395,24 @@ header {
         align-items: flex-start;
         gap: 1rem;
         }
-    
+    .page__section--service{
+        padding:0;
+    }
     .service__icon--header {
         width: 40%;
         flex-grow: 1;
         justify-content: center;
     }
+
+    /* blog */
+    .blog__dateContainer{
+        width: 3.12rem;
+        height: 3.37rem;
+    }
+    .blog__date--small{
+        margin: 0.5rem;
+    }
+
         /* footer */
     .page__footer{
         padding: 0 1rem;
@@ -394,6 +422,7 @@ header {
         order: 1; 
         grid-column-start: 2;
         grid-column-end: -1;
+        margin-bottom: 2rem;
            
     }
 
@@ -504,8 +533,15 @@ header {
     .m-hide {
         display: none;
     }
+    .intro,
+    .page__section {
+        padding: 0 1rem;
+    }
 
    /* navbar */
+    .logo{
+       margin-bottom: 0.7rem;
+    }
     .page__header {
         display: flex;
         flex-direction: column;
@@ -652,8 +688,7 @@ header {
         display: grid;
         justify-content: center;
     }
-
-
+  
     /* footer */
     .footer__about{
         grid-column: span 3;
@@ -913,6 +948,12 @@ header {
     background-color: var(--color-thrinary);
 }
 
+/* page secction header */
+.section__header{
+    margin-bottom: 2rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}
 
 /* Hero Banner */
 .page__main {
@@ -989,24 +1030,24 @@ header {
 
 
 
-    .hero__title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 4px;
-    }   
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}   
 
-        .hero__title--metro {
-            border-left: 7.735px solid #186AA2;
+.hero__title--metro {
+    border-left: 7.735px solid #186AA2;
 
-        }
-        .hero__title--quick {
-                border-left: 7.735px solid #DE6262;
-        }
-        .hero__title--reinvented {
-                border-left: 7.735px solid #FFB901;
-        }
+}
+.hero__title--quick {
+    border-left: 7.735px solid #DE6262;
+}
+.hero__title--reinvented {
+    border-left: 7.735px solid #FFB901;
+}
 
 
 .hero__title--metro,
@@ -1023,13 +1064,12 @@ header {
     padding: 3rem 0;
 }
 /* Services */
-.page__section--service {
-    padding-top: 4.34rem;
-    padding-bottom: 4.34rem;
+.section__header--service{
+    margin: 0;
 }
-
 .section__header__title {
     line-height: 0;
+    text-align: center;
 }
 .section__header__subtitle {
     color: #A3A3A3;
@@ -1037,6 +1077,7 @@ header {
     font-size: 0.6875rem;
     font-style: normal;
     font-weight: 200;
+    margin: 0;
 }
 
 .service__icon--header {
@@ -1094,14 +1135,6 @@ header {
     border-color: #1596BD;
 }
 
-.intro {
-    font-family: Ubuntu;
-    font-size: 2.125rem;
-    font-style: normal;
-    font-weight: 300;
-    color: #3B3B3B;
-    text-align: center;
-}
 
 
 /* Blog */
@@ -1172,10 +1205,7 @@ header {
     text-align: left;
 }
 
-.section__header{
-    margin-bottom: 2rem;
-    margin-top: 4.5rem;
-}
+
 /* Clients */
 .client__logo {
     display: flex;
