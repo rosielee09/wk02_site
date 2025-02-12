@@ -293,18 +293,23 @@ line-height: normal;
     text-align: justify;
 }
 
-<<<<<<< HEAD
 /* Portfolio */
 .portfolio__overlay--title {
+    font-family: Ubuntu;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .portfolio__overlay--subTitle {
+    font-family: Ubuntu;
     font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-=======
->>>>>>> 7544ee135e38e4bcde0f7e1b6361ea10f0454427
 
 
 /* ==========================================================================
