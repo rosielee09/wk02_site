@@ -715,6 +715,19 @@ header {
     }
 
   
+    /* client  */
+
+    .portfolio__item:hover .portfolio__overlay {
+        opacity: 0.8; 
+        background-color: var(--color-primary); 
+    }
+
+    .portfolio__item:hover .portfolio__overlay--title,
+    .portfolio__item:hover .portfolio__overlay--subTitle 
+    .portfolio__item:hover .portfolio__overlay--icon {
+        opacity: 1;
+
+    }
     .footer__about {
         grid-column: span 3; /* 3 columns */
     }
@@ -744,7 +757,6 @@ header {
 
 =======
   
-}
 >>>>>>> 71e1cd44fc3f3db3cc140423384ea4c1562ca826
 
 
@@ -1172,17 +1184,6 @@ header {
  
 }
 
-.portfolio__item:hover .portfolio__overlay {
-    opacity: 0.8; 
-    background-color: var(--color-primary); 
-}
-
-.portfolio__item:hover .portfolio__overlay--title,
-.portfolio__item:hover .portfolio__overlay--subTitle 
-.portfolio__item:hover .portfolio__overlay--icon {
-    opacity: 1;
-
-}
 .client__logo--inkscape{
   margin: 0 auto;
 
